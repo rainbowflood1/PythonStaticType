@@ -1,0 +1,29 @@
+[
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "myfile",
+        "kind": 5,
+        "importPath": "TypedPython",
+        "description": "TypedPython",
+        "peekOfCode": "myfile = open(\"main.pysd\", \"r\")\nmyline = myfile.readline()\nwhile myline:\n    myline = myline.replace(\"//\", \"#\")\n    myline = myline.replace(\"++\", \" += 1\")\n    myline = myline.replace(\"--\", \" -= 1\")\n    myline = myline.replace(\"NULL\", \"None\")\n    myline = myline.replace(\"<n>\", \"\\n\")\n    myline = myline.replace(\"<t>\", \"\\t\")\n    myline = myline.replace(\"true\", \"True\")",
+        "detail": "TypedPython",
+        "documentation": {}
+    },
+    {
+        "label": "myline",
+        "kind": 5,
+        "importPath": "TypedPython",
+        "description": "TypedPython",
+        "peekOfCode": "myline = myfile.readline()\nwhile myline:\n    myline = myline.replace(\"//\", \"#\")\n    myline = myline.replace(\"++\", \" += 1\")\n    myline = myline.replace(\"--\", \" -= 1\")\n    myline = myline.replace(\"NULL\", \"None\")\n    myline = myline.replace(\"<n>\", \"\\n\")\n    myline = myline.replace(\"<t>\", \"\\t\")\n    myline = myline.replace(\"true\", \"True\")\n    myline = myline.replace(\"false\", \"False\")",
+        "detail": "TypedPython",
+        "documentation": {}
+    }
+]

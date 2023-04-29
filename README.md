@@ -1,1 +1,1 @@
-# *Make Python partially statically typed!*
+# **Make Python partially statically typed!**

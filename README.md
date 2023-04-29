@@ -5,4 +5,5 @@
 1. So there's `int`, `char`, `list`, `float` and `bool`.
 - Second, I will show you how to increment and decrement variables:
 1.  there's `++` and `--` it's the same as `+= 1` and `-= 1`.
-- Thired, there is `NULL` it is the same as `NULL` and it's optional.
+- Thired, there is `NULL` it is the same as `None` and it's optional.
+- Fifth, `True` and `False` is not case-sensitive, but it is optional

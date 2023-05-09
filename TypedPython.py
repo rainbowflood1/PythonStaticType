@@ -9,13 +9,6 @@ while myline:
     myline = myline.replace("NULL", "None")
     myline = myline.replace("<n>", "\n")
     myline = myline.replace("<t>", "\t")
-    myline = myline.replace("true", "True")
-    myline = myline.replace("false", "False")
-    if "include" in myline:
-        myline = myline.replace("include<", "import ")
-        myline = myline.replace("include <", "import ")
-        myline = myline.replace("include", "import")
-        myline = myline.replace(">", "")
     if "int " in myline:
         tokens = re.split(" ", myline)
         if type(int(tokens[3])) == "int":
@@ -41,11 +34,17 @@ while myline:
         if type(list(tokens[3])) == "list":
             myline = myline.replace("list ", "")
             exec(myline)
+    if "complex " in myline:
+        tokens = re.split(" ", myline)
+        if type(complex(tokens[3])) == "complex":
+            myline = myline.replace("complex ", "")
+            exec(myline)
     myline = myline.replace("list ", "")
     myline = myline.replace("int ", "")
     myline = myline.replace("char ", "")
     myline = myline.replace("bool ", "")
     myline = myline.replace("float ", "")
+    myline = myline.replace("complex ", "")
     exec(myline)
     myline = myfile.readline()
 myfile.close()

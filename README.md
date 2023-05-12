@@ -1,4 +1,4 @@
-# _Make Python partially statically typed!_
+# Make Python partially statically typed!
 ## Here's how to get started!
 
 - First, here's all of the types:

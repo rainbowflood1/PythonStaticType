@@ -39,6 +39,12 @@ while myline:
         if type(complex(tokens[3])) == "complex":
             myline = myline.replace("complex ", "")
             exec(myline)
+    if "dict " in myline:
+        tokens = re.split(" ", myline)
+        if type(dict(tokens[3])) == "dict":
+            myline = myline.replace("dict ", "")
+            exec(myline)
+    myline = myline.replace("dict ", "")
     myline = myline.replace("list ", "")
     myline = myline.replace("int ", "")
     myline = myline.replace("char ", "")

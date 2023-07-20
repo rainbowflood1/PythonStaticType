@@ -12,5 +12,5 @@
   1.  There's `++` and `--` it's the same as `+= 1` and `-= 1`.
 - Thired, there's `NULL` it is the same as `None` and it's optional.
 - Forth, there's `::` instead of `.`.
-- Fifth, 
+- Fifth, there's simicolens, Whenever you call a function!
 - The syntax is related to **C++**.
